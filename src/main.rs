@@ -18,6 +18,7 @@ fn App(cx: Scope) -> Element {
             Demo { texto: "Texto de prueba".to_string() }
             DemoBorrowed { texto: { texto } }
             button { onclick: move |event| println!("Clicked! Event: {event:?}"), "click me!" }
+            button { onclick: move |event| println!("Clicked! Event: {event:?}"), "click me!" }
         }
     })
 }
